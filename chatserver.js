@@ -1,7 +1,7 @@
 const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-
+console.log('init');
 let clients = [];
 const chatHistory = [];
 app.use((req, res, next) => {
@@ -9,11 +9,14 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
+console.log('headers set');
 
 app.get('/', (req, res) => {
+  
   console.log('hit');
   res.json({ status: 200, message: 'OK' });
 });
+console.log('setting event for socket');
 
 io.on('connection', (socket) => {
   console.log('A user connected', socket.connected);
@@ -45,7 +48,11 @@ io.on('connection', (socket) => {
     }
   });
 });
+console.log('reached end');
+
 // start server
-http.listen(8080, () => {
-  console.log('chat server is ready on port 8080');
+http.listen(3000 () => {
+  console.log('chat server is ready on port 3000');
 });
+
+console.log('end');
