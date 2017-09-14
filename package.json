@@ -1,0 +1,21 @@
+{
+  "name": "nodechat",
+  "version": "1.0.0",
+  "description": "testing node with heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "hannad rehman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
