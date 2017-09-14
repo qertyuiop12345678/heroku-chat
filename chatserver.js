@@ -46,6 +46,6 @@ io.on('connection', (socket) => {
   });
 });
 // start server
-http.listen(3001, () => {
-  console.log('chat server is ready on port 3001');
+http.listen(80, () => {
+  console.log('chat server is ready on port 80');
 });
