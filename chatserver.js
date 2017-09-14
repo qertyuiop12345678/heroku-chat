@@ -52,7 +52,7 @@ console.log('reached end');
 
 // start server
 const port_number = server.listen(process.env.PORT || 3000);
-http.listen(port_number () => {
+http.listen(port_number,() => {
   console.log('chat server is ready on port '+port_number+'--');
 });
 
