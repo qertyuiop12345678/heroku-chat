@@ -2,7 +2,7 @@
   "name": "Reacthr-starter-kit",
   "version": "2.0.0",
   "description": "learining web packs",
-  "main": "index.js",
+  "main": "chatserver.js",
   "scripts": {
     "start": "node chatserver.js"
   },
