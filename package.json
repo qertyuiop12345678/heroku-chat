@@ -4,7 +4,7 @@
   "description": "learining web packs",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "npm-run-all": "^4.0.2",
-    "rimraf": "^2.6.1",
+    "rimraf": "^2.6.1"
   },
   "dependencies": {
     "express": "^4.15.4",
