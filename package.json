@@ -4,7 +4,7 @@
   "description": "learining web packs",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node chatserver.js"
   },
   "repository": {
     "type": "git",
