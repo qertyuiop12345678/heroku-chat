@@ -51,8 +51,9 @@ io.on('connection', (socket) => {
 console.log('reached end');
 
 // start server
-http.listen(3000 () => {
-  console.log('chat server is ready on port 3000');
+const port_number = server.listen(process.env.PORT || 3000);
+http.listen(port_number () => {
+  console.log('chat server is ready on port '+port_number+'--');
 });
 
 console.log('end');
